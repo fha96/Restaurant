@@ -1,0 +1,42 @@
+#tableInfo {
+    border: 10px;
+    border-right-color: brown;
+}
+
+#th1{
+    font-size: 25px;
+    padding: 10px;
+}
+#th2{
+    font-size: 25px;
+    padding: 10px;
+}
+#th3{
+    font-size: 25px;
+    padding: 10px;
+}
+#th4{
+    font-size: 25px;
+    padding: 10px;
+}
+#td1{
+    font-size: 20px;
+    padding: 10px;
+}
+#td2{
+    font-size: 20px;
+    padding: 10px;
+}
+#td3{
+    font-size: 20px;
+    padding: 10px;
+}
+#td4{
+    font-size: 20px;
+    padding: 10px;
+}
+
+
+footer {
+   display: ;
+}
