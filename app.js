@@ -42,6 +42,7 @@ tableRow.appendChild(th4);
 
 FoodInfo.prototype.renderInfo= function(){
     const tableRow2=document.createElement("tr");
+    tableRow2.id="tr2";
     tableEl.appendChild(tableRow2);
     
     const td1=document.createElement("td");
@@ -52,7 +53,7 @@ FoodInfo.prototype.renderInfo= function(){
     td1.textContent=this.id;
     td2.textContent=this.foodName;
     td3.textContent=this.type;
-    td4.textContent=this.price;
+    td4.textContent=this.price + " JD ";
     
     td1.id="td1";
     td2.id="td2";
