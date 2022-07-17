@@ -123,3 +123,12 @@ margin: 0%;
 .f1 h3{
     padding-left: 20px;
 }
+#resultTag {
+    display: flex;
+    text-decoration: #111;
+    background-color: whitesmoke;
+    padding: 10px;
+    font-style: italic;
+    margin: auto;
+    border: solid 3px;
+}
