@@ -7,20 +7,31 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
     
 </head>
 <body>
     <header>
         <h1>Welcome to our Restaurant !</h1>
         <ul id="navbar">
-            <li><a href="#home">Home</a></li>
+            <li><a href="./index.html">Home</a></li>
             <li><a href="#clients">Clients</a></li>
             <li><a href="#aboutus">About us</a></li>
         </ul>
     </header>
-
-    <main>
-      
+ 
+    <main id="stMain">
+        <ul id="pieinfo">
+            <li id="l1">Fruit and Vegetabels : Red</li>
+            <li id="l2">Starchy : Yellow</li>
+            <li id="l3">Dairy : Blue</li>
+            <li id="l4">Protein : Green</li>
+            <li id="l5">Fat : Black</li>
+        </ul>
+      <!-- pie chart canvas element -->
+ <canvas id="countries" width="300" height="200"></canvas>
+ <!-- bar chart canvas element -->
+ <canvas id="income" width="500" height="300"></canvas>
     </main>
    
     

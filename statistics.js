@@ -44,11 +44,39 @@ tableRow.appendChild(th4);
         // console.log(parseData);
         // console.log(typeof parseData);
 
+        //declare 2 arrays to use it inside a Pie-Chart
+        let fruitCounter=[];
+        let starchyCounter=[];
+        let dairyCounter=[];
+        let proteinCounter=[];
+        let fatCounter=[];
+
         //do re-instantiation
         if(parseData != null){
         for(let i=0;i<parseData.length;i++){
-        // new FoodInfo(,parseData[i].type,parseData[i].price);
         ////////////////////////////////////////////////////////////////
+        //calculate the number of type food
+        switch (parseData[i].type){
+            case "Fruit and Vegetables":
+                fruitCounter.push(parseData[i].type);
+                break;
+            case "Strachy Food":
+                starchyCounter.push(parseData[i].type);
+                break;
+            case "Dairy":
+                dairyCounter.push(parseData[i].type);
+                break;
+            case "Protein":
+                proteinCounter.push(parseData[i].type);
+                break;
+            case "Fat":
+                fatCounter.push(parseData[i].type);
+                break;
+
+        }
+        
+
+
 
         const tableRow2=document.createElement("tr");
         tableRow2.id="tr2";
@@ -74,8 +102,62 @@ tableRow.appendChild(th4);
         tableRow2.appendChild(td3);
         tableRow2.appendChild(td4);
         document.body.appendChild(mainSec[0]);
+        chartData(fatCounter.length,starchyCounter.length,dairyCounter.length,proteinCounter.length,fatCounter.length);
 
     }
 }
     }
     getData();
+   
+    function chartData(fruit,starchy,dairy,protein,fat){
+
+   
+            // line chart data
+            // pie chart data
+            var pieData = [
+                {
+                    value: fruit,
+                    color:"red"
+                },
+                {
+                    value : starchy,
+                    color : "yellow"
+                },
+                {
+                    value : dairy,
+                    color : "blue"
+                },
+                {
+                    value : protein,
+                    color : "green"
+                },
+                {
+                    value : fat,
+                    color : "black"
+                }
+            ];
+            // pie chart options
+            var pieOptions = {
+                 segmentShowStroke : false,
+                 animateScale : true
+            }
+            // get pie chart canvas
+            var countries= document.getElementById("countries").getContext("2d");
+            // draw pie chart
+            new Chart(countries).Pie(pieData, pieOptions);
+            // bar chart data
+            var barData = {
+                labels : ["Fruit and Vegetables","Strachy Food","Dairy","Protein","Fat"],
+                datasets : [
+                    {
+                        fillColor : "red",
+                        strokeColor : "black",
+                        data : [fruit,starchy,dairy,protein,fat]
+                    }
+                ]
+            }
+            // get bar chart canvas
+            var income = document.getElementById("income").getContext("2d");
+            // draw bar chart
+            new Chart(income).Bar(barData);
+        }
