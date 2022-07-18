@@ -9,9 +9,9 @@ this.price=price;
 foodArray.push(this);
 }
 
-FoodInfo.prototype.renderInfo= function(){
+// FoodInfo.prototype.renderInfo= function(){
     
-}
+// }
 
 //call the element by id
 const form= document.getElementById("form1");
@@ -35,10 +35,3 @@ function saveData(){
 }
 
 
-
-// function renderFood(arr){
-//     for(let i=0;i<arr.length;i++){
-//         arr[i].renderInfo();
-//     }
-// }
-// renderFood(foodArray);

@@ -61,22 +61,22 @@ main{
 
 #th1{
     font-size: 25px;
-    padding: 30px;
+    padding: 10px;
    
 }
 #th2{
     font-size: 25px;
-    padding: 30px;
+    padding: 10px;
     
 }
 #th3{
     font-size: 25px;
-    padding: 30px;
+    padding: 10px;
     
 }
 #th4{
     font-size: 25px;
-    padding: 30px;
+    padding: 10px;
    
 }
 #td1{
@@ -131,4 +131,50 @@ margin: 0%;
     font-style: italic;
     margin: auto;
     border: solid 3px;
+}
+#stMain table{
+    position: relative;
+    margin-top: 0%;
+    margin-right: 40%;
+    padding: 0%;
+    width: 30%;
+
+}
+#countries{
+    margin-top: 10%;
+    margin-left: 20%;
+}
+#income{
+    margin-top: 10%;
+}
+#pieinfo{
+    display: inline;
+    position: absolute;
+    margin-right: 65%;
+    color: #111;
+}
+#pieinfo li{
+    font-style: italic;
+    display: flex;
+    
+}
+
+#l1{
+    color: red;
+}
+
+#l2{
+color: yellow;
+}
+
+#l3{
+color: blue;
+}
+
+#l4{
+color: green;
+}
+
+#l5{
+color: black;
 }
